@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanya Trivedi | Digital Craftsman</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* A more modern, premium font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* A deep, dark background */
+            color: #c9d1d9; /* Softer white text */
+        }
+
+        /* Animated Gradient Background */
+        .animated-gradient {
+            background: linear-gradient(-45deg, #0d1117, #161b22, #003366, #0d1117);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Gradient text for the hero */
+        .hero-gradient-text {
+            background: linear-gradient(90deg, #58a6ff, #3081f7); /* A vibrant blue gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        
+        /* Glow effect for project cards on hover */
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(88, 166, 255, 0.2), 0 0 10px rgba(88, 166, 255, 0.1);
+        }
+
+        /* Initial state for animations (hidden) */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+<body class="animated-gradient">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/60 backdrop-blur-xl border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold hero-gradient-text">Lavanya Trivedi</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-400">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-32">
+
+        <section id="about" class="py-24 md:py-32">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter" data-anim="hero-text">
+                    <span class="hero-gradient-text">Hey, I’m Lavanya Trivedi.</span>
+                </h1>
+                <h2 class="mt-4 text-xl md:text-2xl font-medium text-slate-400" data-anim="hero-text" style="--delay: 0.1s;">A builder at heart and a student at NIT Warangal.</h2>
+                <p class="mt-8 max-w-2xl mx-auto text-lg md:text-xl text-slate-500 leading-relaxed" data-anim="hero-text" style="--delay: 0.2s;">
+                    I love creating — whether it’s a product, a project, or a new idea from scratch. I’m drawn to bringing structure to chaos, which fuels my interest in project and product management. I find energy in clarity, momentum, and meaningful work.
+                </p>
+                <div class="mt-10 flex justify-center gap-4" data-anim="hero-text" style="--delay: 0.3s;">
+                    <a href="#" target="_blank" class="bg-sky-500/10 text-sky-400 font-semibold py-2 px-5 rounded-lg border border-sky-500/20 hover:bg-sky-500/20 hover:border-sky-500/30 transition-all duration-300">GitHub</a>
+                    <a href="#" target="_blank" class="bg-slate-400/10 text-slate-300 font-semibold py-2 px-5 rounded-lg border border-slate-400/20 hover:bg-slate-400/20 hover:border-slate-400/30 transition-all duration-300">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 md:py-24">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center reveal-up">
+                    <h2 class="text-4xl font-bold tracking-tight">Selected Projects</h2>
+                    <p class="mt-4 text-lg text-slate-400">A few things I've built, bringing ideas to life.</p>
+                </div>
+                
+                <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12">
+                    
+                    <div class="reveal-up project-card bg-slate-900/70 p-8 rounded-2xl border border-slate-800 transition-all duration-300">
+                        <h3 class="text-2xl font-bold text-slate-100">Project Title One</h3>
+                        <p class="mt-3 text-slate-400">A brief description of the project, what it does, and the problem it solves.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                        </div>
+                        <a href="#" target="_blank" class="inline-block mt-6 text-sm font-bold text-sky-400 hover:text-sky-300 transition-colors">View Project →</a>
+                    </div>
+
+                    <div class="reveal-up project-card bg-slate-900/70 p-8 rounded-2xl border border-slate-800 transition-all duration-300 mt-0 md:mt-16">
+                        <h3 class="text-2xl font-bold text-slate-100">Project Title Two</h3>
+                        <p class="mt-3 text-slate-400">A brief description of the project, what it does, and the problem it solves.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-yellow-900/50 text-yellow-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span>
+                        </div>
+                        <a href="#" target="_blank" class="inline-block mt-6 text-sm font-bold text-sky-400 hover:text-sky-300 transition-colors">View Project →</a>
+                    </div>
+                    
+                    <div class="reveal-up project-card bg-slate-900/70 p-8 rounded-2xl border border-slate-800 transition-all duration-300">
+                        <h3 class="text-2xl font-bold text-slate-100">Project Title Three</h3>
+                        <p class="mt-3 text-slate-400">A brief description of the project, what it does, and the problem it solves.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                             <span class="bg-orange-900/50 text-orange-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">SwiftUI</span>
+                             <span class="bg-red-900/50 text-red-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase</span>
+                        </div>
+                        <a href="#" target="_blank" class="inline-block mt-6 text-sm font-bold text-sky-400 hover:text-sky-300 transition-colors">View Project →</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 md:py-32">
+            <div class="max-w-2xl mx-auto text-center reveal-up">
+                <h2 class="text-4xl font-bold tracking-tight">Let's Build What's Next.</h2>
+                <p class="mt-4 text-lg text-slate-400">Have a project in mind, or just want to connect? My inbox is always open.</p>
+                <div class="mt-8">
+                    <a href="mailto:youremail@example.com" class="inline-block text-xl font-bold py-4 px-10 rounded-lg transition-all duration-300 bg-sky-500 text-white hover:bg-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.5)] hover:shadow-[0_0_35px_rgba(56,189,248,0.6)]">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="py-8 text-center text-sm text-slate-600 border-t border-slate-800">
+        <p>&copy; 2025 Lavanya Trivedi. Crafted with passion.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            gsap.registerPlugin(ScrollTrigger);
+
+            // --- HERO SECTION ANIMATION ---
+            gsap.from("[data-anim='hero-text']", {
+                duration: 0.8,
+                opacity: 0,
+                y: 40,
+                stagger: 0.1,
+                ease: "power3.out",
+                delay: 0.2
+            });
+
+            // --- SCROLL-TRIGGERED ANIMATIONS ---
+            const revealElements = document.querySelectorAll('.reveal-up');
+            
+            revealElements.forEach(el => {
+                gsap.fromTo(el, 
+                    { opacity: 0, y: 30 }, // from state
+                    { // to state
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 85%", // when the top of the element hits 85% of the viewport height
+                            end: "bottom 20%",
+                            toggleActions: "play none none reverse" // play on enter, reverse on leave
+                        }
+                    }
+                );
+            });
+
+            // --- SMOOTH SCROLL FOR NAV LINKS ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
