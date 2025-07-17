@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en" class="scroll-smooth"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Lavanya Trivedi | Digital Craftsman&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* A more modern, premium font */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0d1117; /* A deep, dark background */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #c9d1d9; /* Softer white text */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Animated Gradient Background */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.animated-gradient {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(-45deg, #0d1117, #161b22, #003366, #0d1117);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: 400% 400%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: gradient 15s ease infinite;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes gradient {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0% { background-position: 0% 50%; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>50% { background-position: 100% 50%; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>100% { background-position: 0% 50%; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Gradient text for the hero */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero-gradient-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, #58a6ff, #3081f7); /* A vibrant blue gradient */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-text-fill-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-fill-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Glow effect for project cards on hover */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.project-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-8px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 25px rgba(88, 166, 255, 0.2), 0 0 10px rgba(88, 166, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Initial state for animations (hidden) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.reveal-up {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(30px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="animated-gradient"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/60 backdrop-blur-xl border-b border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 py-4 flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="text-xl font-bold hero-gradient-text"&gt;Lavanya Trivedi&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-400"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="hover:text-sky-400 transition-colors"&gt;About&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#projects" class="hover:text-sky-400 transition-colors"&gt;Projects&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="hover:text-sky-400 transition-colors"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto px-6 pt-32"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="about" class="py-24 md:py-32"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-4xl mx-auto text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="text-5xl md:text-7xl font-black tracking-tighter" data-anim="hero-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="hero-gradient-text"&gt;Hey, I’m Lavanya Trivedi.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="mt-4 text-xl md:text-2xl font-medium text-slate-400" data-anim="hero-text" style="--delay: 0.1s;"&gt;A builder at heart and a student at NIT Warangal.&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-8 max-w-2xl mx-auto text-lg md:text-xl text-slate-500 leading-relaxed" data-anim="hero-text" style="--delay: 0.2s;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>I love creating — whether it’s a product, a project, or a new idea from scratch. I’m drawn to bringing structure to chaos, which fuels my interest in project and product management. I find energy in clarity, momentum, and meaningful work.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-10 flex justify-center gap-4" data-anim="hero-text" style="--delay: 0.3s;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" target="_blank" class="bg-sky-500/10 text-sky-400 font-semibold py-2 px-5 rounded-lg border border-sky-500/20 hover:bg-sky-500/20 hover:border-sky-500/30 transition-all duration-300"&gt;GitHub&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" target="_blank" class="bg-slate-400/10 text-slate-300 font-semibold py-2 px-5 rounded-lg border border-slate-400/20 hover:bg-slate-400/20 hover:border-slate-400/30 transition-all duration-300"&gt;LinkedIn&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="projects" class="py-16 md:py-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-center reveal-up"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-4xl font-bold tracking-tight"&gt;Selected Projects&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mt-4 text-lg text-slate-400"&gt;A few things I've built, bringing ideas to life.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="reveal-up project-card bg-slate-900/70 p-8 rounded-2xl border border-slate-800 transition-all duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-slate-100"&gt;Project Title One&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-3 text-slate-400"&gt;A brief description of the project, what it does, and the problem it solves.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="mt-4 flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-0.5 rounded-full"&gt;React&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full"&gt;Node.js&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#" target="_blank" class="inline-block mt-6 text-sm font-bold text-sky-400 hover:text-sky-300 transition-colors"&gt;View Project →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="reveal-up project-card bg-slate-900/70 p-8 rounded-2xl border border-slate-800 transition-all duration-300 mt-0 md:mt-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-slate-100"&gt;Project Title Two&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-3 text-slate-400"&gt;A brief description of the project, what it does, and the problem it solves.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="mt-4 flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-0.5 rounded-full"&gt;Python&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="bg-yellow-900/50 text-yellow-300 text-xs font-semibold px-2.5 py-0.5 rounded-full"&gt;Flask&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#" target="_blank" class="inline-block mt-6 text-sm font-bold text-sky-400 hover:text-sky-300 transition-colors"&gt;View Project →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="reveal-up project-card bg-slate-900/70 p-8 rounded-2xl border border-slate-800 transition-all duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-slate-100"&gt;Project Title Three&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-3 text-slate-400"&gt;A brief description of the project, what it does, and the problem it solves.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="mt-4 flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                             </span>&lt;span class="bg-orange-900/50 text-orange-300 text-xs font-semibold px-2.5 py-0.5 rounded-full"&gt;SwiftUI&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                             </span>&lt;span class="bg-red-900/50 text-red-300 text-xs font-semibold px-2.5 py-0.5 rounded-full"&gt;Firebase&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#" target="_blank" class="inline-block mt-6 text-sm font-bold text-sky-400 hover:text-sky-300 transition-colors"&gt;View Project →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="contact" class="py-24 md:py-32"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-2xl mx-auto text-center reveal-up"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-4xl font-bold tracking-tight"&gt;Let's Build What's Next.&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 text-lg text-slate-400"&gt;Have a project in mind, or just want to connect? My inbox is always open.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="mailto:youremail@example.com" class="inline-block text-xl font-bold py-4 px-10 rounded-lg transition-all duration-300 bg-sky-500 text-white hover:bg-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.5)] hover:shadow-[0_0_35px_rgba(56,189,248,0.6)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Get In Touch</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="py-8 text-center text-sm text-slate-600 border-t border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 Lavanya Trivedi. Crafted with passion.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', function() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gsap.registerPlugin(ScrollTrigger);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- HERO SECTION ANIMATION ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gsap.from("[data-anim='hero-text']", {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>duration: 0.8,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>opacity: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>y: 40,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>stagger: 0.1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ease: "power3.out",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>delay: 0.2</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- SCROLL-TRIGGERED ANIMATIONS ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const revealElements = document.querySelectorAll('.reveal-up');</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>revealElements.forEach(el =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gsap.fromTo(el,<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ opacity: 0, y: 30 }, // from state</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ // to state</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>opacity: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>y: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>duration: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>ease: "power3.out",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>scrollTrigger: {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>trigger: el,</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>start: "top 85%", // when the top of the element hits 85% of the viewport height</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>end: "bottom 20%",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>toggleActions: "play none none reverse" // play on enter, reverse on leave</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- SMOOTH SCROLL FOR NAV LINKS ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>anchor.addEventListener('click', function (e) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>document.querySelector(this.getAttribute('href')).scrollIntoView({</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>behavior: 'smooth'</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
